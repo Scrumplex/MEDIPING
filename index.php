@@ -19,7 +19,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>mediping</title>
+    <title>MEDIPING</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="assets/css/app.css" type="text/css" rel="stylesheet"/>
@@ -34,8 +34,8 @@
 <div class="wrapper">
     <h1>Calculating charts...</h1>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
-<script src="assets/js/app.js" type="text/javascript"></script>
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/highcharts.min.js" type="text/javascript"></script>
+<script src="assets/js/app.min.js" type="text/javascript"></script>
 </body>
 </html>
