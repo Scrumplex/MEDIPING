@@ -19,13 +19,11 @@
 		var wrapper = $('.wrapper');
 
 		//INIT
-		Highcharts.setOptions({
+		var medipingTheme = {
 			global: {
 				useUTC: false
-			}
-		});
-		var medipingTheme = {
-			colors: ['#F44336', '#03A9F4', '#FFEB3B'],
+			},
+			colors: ['#F44336', '#03A9F4', '#FFEB3B', '#8BC34A', '#673AB7', '#009688', '#795548', '#00BCD4', '#FF5722', '#3F51B5', '#9C27B0', '#4CAF50', '#CDDC39', '#FFC107', '#FF9800'],
 			chart: {
 				backgroundColor: '#263238',
 				borderWidth: 0,
@@ -283,10 +281,13 @@
 		$("body").on("click", "*", function (e) {
 			var self = $(this),
 				body = $("body");
+
 			if (self.data("close") === "sidebar") {
 				body.removeClass("show-sidebar");
+				return;
 			} else if (self.data("open") === "sidebar") {
 				body.addClass("show-sidebar");
+				return;
 			}
 		});
 	});

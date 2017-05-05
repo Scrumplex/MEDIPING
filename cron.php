@@ -20,23 +20,23 @@ require_once __DIR__ . "/ping.inc.php";
 $collectedDataFile = __DIR__ . "/collectedData.json";
 
 if (!file_exists($collectedDataFile) || filesize($collectedDataFile) == 0) {
-    $data = array();
+	$data = array();
 } else {
-    $fileObject = new SplFileObject($collectedDataFile, "r");
-    $currentData = $fileObject->fread(filesize($collectedDataFile));
-    $data = json_decode($currentData, true);
+	$fileObject = new SplFileObject($collectedDataFile, "r");
+	$currentData = $fileObject->fread(filesize($collectedDataFile));
+	$data = json_decode($currentData, true);
 }
 $fileObject = null;
 $fileObject = new SplFileObject($collectedDataFile, "w");
 
 foreach ($hosts as $host) {
-    $entry = array(
-        "timestamp" => time(),
-        "time" => ping($host, 10)
-    );
-    if (!isset($data[$host]))
-        $data[$host] = array();
-    array_push($data[$host], $entry);
+	$entry = array(
+		"timestamp" => time(),
+		"time" => ping($host, 10)
+	);
+	if (!isset($data[$host]))
+		$data[$host] = array();
+	array_push($data[$host], $entry);
 }
 
 $fileObject->fwrite(json_encode($data));

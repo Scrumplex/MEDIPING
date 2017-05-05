@@ -18,24 +18,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>MEDIPING</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="assets/css/app.css" type="text/css" rel="stylesheet"/>
-    <meta name="robots" content="noindex,nofollow"/>
-    <meta name="theme-color" content="#263238"/>
-    <meta name="msapplication-navbutton-color" content="#263238"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="author" content="Sefa Eyeoglu"/>
+	<meta charset="utf-8"/>
+	<title>MEDIPING</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="assets/css/app.css" type="text/css" rel="stylesheet"/>
+	<meta name="robots" content="noindex,nofollow"/>
+	<meta name="theme-color" content="#263238"/>
+	<meta name="msapplication-navbutton-color" content="#263238"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="author" content="Sefa Eyeoglu"/>
 </head>
 <body>
 <div class="wrapper">
-    <h1>Calculating charts...</h1>
+	<h1>Calculating charts...</h1>
 </div>
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/highcharts.min.js" type="text/javascript"></script>
-<script src="assets/js/app.min.js" type="text/javascript"></script>
+<script src="assets/js/app.js" type="text/javascript"></script>
 </body>
 </html>
